@@ -1,0 +1,159 @@
+<mxfile host="65bd71144e">
+    <diagram id="djyqxkZVFcRqVqWpqOaf" name="Page-1">
+        <mxGraphModel dx="2361" dy="1986" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="" style="aspect=fixed;sketch=0;html=1;dashed=0;whitespace=wrap;verticalLabelPosition=bottom;verticalAlign=top;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon2;prIcon=api" vertex="1" parent="1">
+                    <mxGeometry x="36.5" y="50" width="50" height="48" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.users.csv_file;" vertex="1" parent="1">
+                    <mxGeometry x="36.5" y="460" width="59" height="43" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="Pricing Service" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="16" y="98" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="OrdersDatabase" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="15.5" y="314" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="Marketing CSV data" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="6" y="510" width="130" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="API REQUESTS FOR DAILY SNAPSHOT OF PRICES OF PRODUCTS THROUGHOUT THE DAY" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="16" y="128" width="124" height="102" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="POSTGRES DB CONTAINING ORDERS AND UPDATES DURING THE DAY" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="10.5" y="344" width="129" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="CSV FILE CONTAINING MARKETING PERFORMANCE&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="550" width="130" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="140" y="160" as="sourcePoint"/>
+                        <mxPoint x="480" y="350" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="480" y="160"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="16" value="VALIDATE" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="12">
+                    <mxGeometry x="-0.1374" y="-2" relative="1" as="geometry">
+                        <mxPoint x="-74" y="-2" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="13" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="140" y="360" as="sourcePoint"/>
+                        <mxPoint x="480" y="360" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="19" value="VALIDATE" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="13">
+                    <mxGeometry x="-0.025" relative="1" as="geometry">
+                        <mxPoint x="-6" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="14" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="140" y="570" as="sourcePoint"/>
+                        <mxPoint x="480" y="370" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="480" y="570"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="20" value="VALIDATE" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="14">
+                    <mxGeometry x="0.0001" y="-1" relative="1" as="geometry">
+                        <mxPoint x="-110" y="-1" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="22" value="" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;fontColor=#4277BB;labelBackgroundColor=default;fontSize=12;spacingTop=3;image=img/lib/ibm/infrastructure/transformation_connectivity.svg;" vertex="1" parent="1">
+                    <mxGeometry x="750" y="330" width="76" height="76" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="" style="endArrow=classic;html=1;entryX=-0.083;entryY=0.505;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="830" y="367.68" as="sourcePoint"/>
+                        <mxPoint x="1026.016" y="367.49999999999994" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="29" value="LOAD" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="23">
+                    <mxGeometry x="-0.1205" y="1" relative="1" as="geometry">
+                        <mxPoint x="14" y="1" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="27" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/databases/Azure_Database_PostgreSQL_Server.svg;" vertex="1" parent="1">
+                    <mxGeometry x="42" y="250" width="48" height="64" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/databases/Azure_Database_PostgreSQL_Server.svg;" vertex="1" parent="1">
+                    <mxGeometry x="1040" y="336" width="48" height="64" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="INDIVIDUAL SOURCES ARE VALIDATED BEFORE BEING APPROVED FOR TRANSFORMATION&amp;nbsp;&lt;div&gt;ALL SOURCES MUST/SHOULD HAVE A WELL DEFINED SCHEMA ON-READ&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="390" y="610" width="240" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="- NETWORK AND CONNECTIVITY ISSUES ARE RETRIED&amp;nbsp;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;- PAGINATION IS IMPLEMENTED TO RETRIEVE ALL PRODUCT PRICES IN ONE API CALL&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;- BAD DATA STOPS THE PIPELINE AND RAISES AN ALERT&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="230" y="180" width="210" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="- DATA COMING IN FROM DB AND CSV MUST MATCH A PRE-DEFINED SCHEMA&lt;div&gt;- BAD DATA HALTS THE PIPELINE AND RAISES AN ALERT&lt;/div&gt;&lt;div&gt;DATA VALIDATION CHECKS INCLUDE: DATA FRESHNESS, NULL CHECKS, DUPLICATE CHECKS, OUTLIERS AND RANGES&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="210" y="390" width="230" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="DATA TRANSFORMATION RELIES ON ALL THREE SOURCES. THEREFORE, TRANSFORMATION ONLY RUNS AFTER DATA IS SUCCESSFULLY INGESTED FROM ALL THREE SOURCES" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="500" y="321" width="190" height="119" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="TRANSFORMATION USING DBT&lt;div&gt;METRICS INCLUDE:&lt;/div&gt;&lt;div&gt;ORDERS SUMMARY, PRICING SNAPSHOT, CAMPAIGN METRICS,&amp;nbsp;&lt;/div&gt;&lt;div&gt;DAILY SALES FACT&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="720" y="420" width="150" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="IDEMPOTENCY IS IMPLEMENTED TO AVOID DUPLICATE ENTRIES" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="980" y="430" width="150" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="LOGGING - LOG EVERY ACTION TAKEN WITHIN THE PIPELINE" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="740" width="1090" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="APACHE AIRFLOW - ORCHESTRATE THE ENTIRE ETL PIPELINE USING DAGS, MONITOR THE PIPELINE, HANDLE RETRIES AND BACKFILLS AND ALERTS UPON PIPELINE FAILURE" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="50" y="-30" width="1090" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="" style="endArrow=classic;html=1;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="10" y="170" as="sourcePoint"/>
+                        <mxPoint x="-70" y="170" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="44" value="INGEST" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="38">
+                    <mxGeometry x="-0.12" y="-1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="39" value="" style="endArrow=classic;html=1;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="6" y="380" as="sourcePoint"/>
+                        <mxPoint x="-74" y="380" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="45" value="INGEST" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="39">
+                    <mxGeometry x="-0.145" y="-3" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="40" value="" style="endArrow=classic;html=1;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="6" y="589.5" as="sourcePoint"/>
+                        <mxPoint x="-74" y="589.5" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="46" value="INGEST" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="40">
+                    <mxGeometry x="-0.07" y="-1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="41" value="API" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-200" y="149" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="DB" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-200" y="354" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" value="CSV" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-200" y="560" width="120" height="60" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
