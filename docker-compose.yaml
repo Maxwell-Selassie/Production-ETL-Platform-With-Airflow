@@ -38,7 +38,7 @@
 #
 # Feel free to modify this file to suit your needs.
 ---
-version: '3'
+
 x-airflow-common:
   &airflow-common
   # In order to add custom dependencies or upgrade provider packages you can use your extended image.
@@ -65,6 +65,8 @@ x-airflow-common:
     AIRFLOW__SMTP__SMTP_PORT: ${SMTP_PORT}
     AIRFLOW__SMTP__SMTP_MAIL_FROM: ${SMTP_MAIL_FROM}
     AIRFLOW__API__AUTH_BACKENDS: 'airflow.api.auth.backend.basic_auth'
+    AIRFLOW_CONN_SOURCE_DB: postgresql://source_db_user:source_db_password@source_db:5432/ecommerce_source_db
+    AIRFLOW_CONN_WAREHOUSE_DB: postgresql://warehouse_db_user:warehouse_db_password@warehouse_db:5432/ecommerce_warehouse_db
     _PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:-}
   volumes:
     - ./dags:/opt/airflow/dags
@@ -80,7 +82,7 @@ x-airflow-common:
 
 services:
   postgres:
-    image: postgres:13
+    image: postgres:15
     environment:
       POSTGRES_USER: airflow
       POSTGRES_PASSWORD: airflow
