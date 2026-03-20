@@ -317,6 +317,20 @@ services:
       - warehouse_db_data:/var/lib/postgresql/data
     restart: always
 
+  pricing_api:
+    build:
+      context: ./mock_api
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      PRICING_API_KEY: ${PRICING_API_KEY}
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
 volumes:
   postgres-db-volume:
   source_db_data:
